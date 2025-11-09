@@ -7,8 +7,17 @@
  * reverseInt(-50) === -5
  */
 
-const reverseInteger = (int) => {
 
-};
+// // ChatGPT solution
+// function reverseInteger(n) {
+//   const reversed = parseInt(Math.abs(n).toString().split('').reverse().join(''));
+//   return n < 0 ? -reversed : reversed;
+// }
+
+const reverseInteger = (int) => {
+    const reversed = int.toString().split("").reverse().join("");
+
+    return parseInt(reversed) * Math.sign(int);
+}
 
 module.exports = reverseInteger;

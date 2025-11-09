@@ -9,8 +9,25 @@
  * palindrome('frontend') === false
  */
 
+// function palindrome(str) {
+//   const reversed = str.split('').reverse().join('');
+// return str === reversed;
+// };
+
+// function palindrome(str) {
+//   const arr = str.split('');
+//   return arr.every((char, i) => char === arr[arr.length - 1 - i]);
+// }
+
 const palindrome = (str) => {
-  
+  const middle = Math.floor(str.length / 2);
+  for (let i = 0; i < middle; i++) {
+    const oppositeIndex = str.length - 1 - i;
+    if (str[i] !== str[oppositeIndex]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 module.exports = palindrome;
