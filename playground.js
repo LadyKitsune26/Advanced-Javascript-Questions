@@ -98,3 +98,32 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+// arrayChunk section //
+
+//  const arr = [0, 1, 2, 3, 4]
+//  const size = 3;
+
+//  for (let i = 0; i < arr.length; i += size) {
+//     console.log(i);
+//  }
+
+
+
+// const arr = [0, 1, 2, 3, 4];
+// const size = 2;
+
+// console.log(arr.slice(4, 6)); // [4]
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Capitalize //
+
+// const str = 'frontend'
+
+// const firstLetter = str[0].toUpperCase();
+// const restOfString = str.slice(1);
+
+// console.log(firstLetter, restOfString); // F rontend
