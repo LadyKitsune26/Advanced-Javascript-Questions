@@ -13,7 +13,10 @@
 // a = 'vaD', c = 'i' => a = 'i' + 'vaD' = 'ivaD'
 // a = 'ivaD', c = 'd' => a = 'd' + 'ivaD' = 'divaD'
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+// // Chat GPT Solution
 // const reverseString = (str) => {
 //   let reversed = '';
 
@@ -28,6 +31,11 @@
 //     return str.split('').reverse().join('');
 // };
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// David's Solution
 const reverseString = (str) => {
     str.split('').reduce((accumulator, currentValue) => currentValue + accumulator, '');
 }

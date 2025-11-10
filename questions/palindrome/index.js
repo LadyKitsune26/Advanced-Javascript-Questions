@@ -9,6 +9,10 @@
  * palindrome('frontend') === false
  */
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// // Chat GPT Solution
 // function palindrome(str) {
 //   const reversed = str.split('').reverse().join('');
 // return str === reversed;
@@ -19,6 +23,11 @@
 //   return arr.every((char, i) => char === arr[arr.length - 1 - i]);
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// // David's Solution
 const palindrome = (str) => {
   const middle = Math.floor(str.length / 2);
   for (let i = 0; i < middle; i++) {
